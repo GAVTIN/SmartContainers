@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/keg_containers/static/css/main.21fda08c.css",
+    "main.js": "/keg_containers/static/js/main.1bbe1b2f.js",
+    "index.html": "/keg_containers/index.html",
+    "main.21fda08c.css.map": "/keg_containers/static/css/main.21fda08c.css.map",
+    "main.1bbe1b2f.js.map": "/keg_containers/static/js/main.1bbe1b2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21fda08c.css",
+    "static/js/main.1bbe1b2f.js"
+  ]
+}

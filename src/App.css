@@ -1,38 +1,128 @@
-.App {
+* {
+  margin: 0.51rem 0.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  /* color: rgb(250, 248, 244);
+  background: #ad5389; 
+  background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); 
+  background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+   );  */
+   background-color: #686756;
+}
+
+.id-selector {
+  display: flex;
+  float: right;
+}
+
+.mid-page1 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 30vh;
+  vertical-align: center;
+  padding-top: 5rem;
+}
+
+.bottom-page1 {
+  padding-top: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+}
+.main-class {
+  display: flex;
+}
+
+.right-content {
+  flex: 80%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-content {
+  flex: 20%;
+}
+.title {
+  color: black;
+  text-align: center;
+  position: relative;
+  width: 10rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mid1{
+    zoom: 150%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mid2{
+    padding-top: 15px;
+    zoom: 250%;
+}
+.side-bar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 10rem;
+  font-size: 1.2rem;
+  height: 100vh;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  position: fixed;
+  margin-bottom: 1rem;
+  border-right: 2px solid black;
+}
+
+.tracker {
+  text-align: center;
+  background-color: black;
+  float: right;
+}
+
+.drop-down {
+  width: auto;
+  display: flex;
+}
+
+.bottom-page1{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+
+}
+
+.bottom-page1 > button {
+    width: 20%;
+    margin-left: 25rem;
+}
+.tracker {
+  background-color: black;
+  width: 13rem;
   color: white;
+  justify-content: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.abc:hover {
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.invent-class {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10rem auto;
+  line-height: 2rem;
 }
