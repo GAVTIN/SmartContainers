@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Data } from "../Data/Data";
 // import HomePageContainer from './HomePageContainer'
 import "../App.css";
-const DropDown = () => {
+export default function DropDown({name}){
   const [val, setVal] = useState([]);
   const [tId, setTId] = useState(null);
   
@@ -17,10 +17,10 @@ const DropDown = () => {
           {val.map((item, key) => (
             <option
               key={item.kegtrackerId}
-              value={item.location}
+              value={item.name}
               onSelect={(e) => setTId(e.target.value)}
             >
-              {item.location}
+              {item.name}
             </option>
           ))}
         </select>
@@ -28,5 +28,3 @@ const DropDown = () => {
     </div>
   );
 };
-
-export default DropDown

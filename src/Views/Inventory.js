@@ -2,8 +2,11 @@ import React from "react";
 // import { Data } from "../Data/Data";
 import Chart from 'react-apexcharts'
 
-const Inventory = () => {
-  
+export default function Inventory(prop){
+    const arr1 = prop.name;
+    const arr2 = prop.value;
+    console.log(arr2)
+//   const arr = [6, 55, 9, 9, 12, 6, 3];
   return (
 
     <div className="container-fluid mb-5">
@@ -11,11 +14,12 @@ const Inventory = () => {
     type="bar"
     width={1380}
     height={700}
-
+    
     series={[
         {
             name:"The Inventory Data",
-            data:[6, 55, 9, 9, 12, 6, 3]
+            data:arr2,
+            strokeColor: '#C23829'
             
         }
         
@@ -26,7 +30,7 @@ const Inventory = () => {
             {
             title:{
                 text: "Bar Chart",
-                style: {fontSize:40}
+                style: {fontSize:20}
             },
             plotOptions: {
             bar: {
@@ -34,8 +38,12 @@ const Inventory = () => {
             horizontal: true,
                 }
             },
+            chart:{
+                 stacked: true
+            },
             xaxis:{
-                categories:["Pale Ale", "India Pale Ale", "Red Ale", "Sour", "Lager", "Stout", "Session Pale Ale"]
+                // categories:["Pale Ale", "India Pale Ale", "Red Ale", "Sour", "Lager", "Stout", "Session Pale Ale"]
+                categories:arr1
                 },
             yaxis:{
                 labels:{
@@ -48,5 +56,3 @@ const Inventory = () => {
     </div>
   );
 };
-
-export default Inventory;

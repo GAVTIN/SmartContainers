@@ -3,7 +3,7 @@ import { Data } from "../Data/Data";
 import {FaTemperatureHigh} from 'react-icons/fa'
 import {FcChargeBattery} from 'react-icons/fc'
 import {GiFullWoodBucketHandle} from 'react-icons/gi'
-import GoogleMap from "./GoogleMaps";
+import GoogleMap from "../Components/GoogleMaps";
 import "../App.css";
 export default function Home() {
   const [val, setVal] = useState([]);
@@ -19,7 +19,6 @@ export default function Home() {
     let a = e.target.value;
     let b = a.split(",");
     setVal(b);
-    console.log(parseFloat(b[4]))
   }
   
   return (

@@ -1,12 +1,12 @@
+import DropDown from "../Components/DropDown";
 import React from "react";
-import DropDown from "./DropDown";
+// import DropDown from "./DropDown";
 
 const KegAv = () => {
   return (
     <>
-      <DropDown />
       <div className="invent-class">
-        <h1>The Availability</h1>
+        <DropDown name="placename" />
       </div>
     </>
   );

@@ -1,10 +1,11 @@
 import React from "react";
-
+// import { reforwardRef } from "react-chartjs-2/dist/utils";
+import DropDown from "../Components/DropDown";
 const ProdAv = () => {
   return (
     <>
       <div className="invent-class">
-        <h1>The Product Availability</h1>
+        <DropDown name="Product"  />
       </div>
     </>
   );
